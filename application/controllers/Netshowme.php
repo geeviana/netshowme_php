@@ -44,6 +44,7 @@ class Netshowme extends CI_Controller {
 			'X-Mailer: PHP/' . phpversion();
 
 		mail($to, $subject, $message, $headers);
+		$this->load->view('vw_cadastro_welcome');
 
 
 
